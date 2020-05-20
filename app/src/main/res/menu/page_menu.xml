@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/message" android:title="消息"></item>
+    <item android:id="@+id/help" android:title="帮助"></item>
+    <item android:id="@+id/feeback" android:title="反馈"></item>
+    <item android:id="@+id/about" android:title="关于"></item>
+</menu>

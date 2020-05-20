@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">一隅</string>
+    <string name="agree">登录代表您已同意</string>
+    <string name="agreement">《一隅用户协议》</string>
+    <string name="sanfang">第三方登录</string>
+    <string name="surch">请输入搜索内容</string>
+    <string name="t01">pic1</string>
+    <string name="t02">pic2</string>
+    <string name="t03">pic3</string>
+    <string name="introduce">了解家乡</string>
+    <string name="newpage">城市新闻</string>
+    <string name="ib1">城市简介</string>
+    <string name="ib2">节日习俗</string>
+    <string name="ib3">风景名胜</string>
+    <string name="ib4">非遗文化</string>
+    <string name="ib5">名人轶事</string>
+    <string name="ib6">特色手工</string>
+</resources>

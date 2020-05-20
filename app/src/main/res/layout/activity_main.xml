@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/first_bg"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/bt_login_or_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登录/注册"
+        android:layout_marginTop="395dp"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/button_shape"
+        android:textColor="#ffffff"
+        android:width="130dp"
+        />
+    <Button
+        android:id="@+id/bt_login_use_it"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="试用"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="395dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/button_shape"
+        android:textColor="#ffffff"
+        android:width="130dp"
+
+        />
+
+</RelativeLayout>

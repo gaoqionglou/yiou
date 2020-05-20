@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--登录界面,用LinearLayout-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+    <!--标题栏-->
+    <include layout="@layout/login_title_bar"></include>
+    <!--显示头像，记得加入id iv_head -->
+    <!--<ImageView
+        android:id="@+id/iv_head"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@mipmap/profile_pic"/>-->
+    <!--输入框-->
+    <EditText
+        android:id="@+id/et_user_name"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_gravity="center_horizontal"
+        android:drawablePadding="10dp"
+        android:paddingLeft="8dp"
+        android:gravity="center_vertical"
+        android:hint="请输入用户名"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textColorHint="#a3a3a3"
+        android:textSize="14sp"/>
+    <!--输入框-->
+    <EditText
+        android:id="@+id/et_psw"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:drawablePadding="10dp"
+        android:paddingLeft="8dp"
+        android:gravity="center_vertical"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textColorHint="#a3a3a3"
+        android:textSize="14sp"/>
+    <!--按钮-->
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button_shape"
+        android:text="登 录"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"/>
+    <!--显示tv register , find_psw -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="35dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:padding="8dp"
+            android:text="立即注册"
+            android:textColor="#ed5a65"
+            android:textSize="14sp"/>
+        <!--layout_weight="1" layout_width="0dp"实现均分效果-->
+        <TextView
+            android:id="@+id/tv_find_psw"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:padding="8dp"
+            android:text="找回密码?"
+            android:textColor="#ed5a65"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="50dp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_height="5px"
+            android:layout_width="90dp"
+            android:background="#c0c4c3"
+            android:layout_gravity="center_vertical"/>
+        <!--layout_weight="1" layout_width="0dp"实现均分效果-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/sanfang"
+            android:textColor="#c0c4c3"/>
+
+        <View
+            android:layout_height="5px"
+            android:layout_width="90dp"
+            android:background="#c0c4c3"
+            android:layout_gravity="center_vertical"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/weChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/wechat"
+            android:background="#FFFFFF"
+            android:paddingRight="20dp"/>
+        <!--layout_weight="1" layout_width="0dp"实现均分效果-->
+        <ImageButton
+            android:id="@+id/qq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:background="#FFFFFF"
+            android:src="@mipmap/qq" />
+
+        <ImageButton
+            android:id="@+id/micro_blog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/micro_blog"
+            android:background="#FFFFFF"
+            android:paddingLeft="20dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:text="@string/agree"
+            android:textColor="#000000"
+            android:textSize="10sp"/>
+        <!--layout_weight="1" layout_width="0dp"实现均分效果-->
+        <TextView
+            android:id="@+id/agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/agreement"
+            android:textColor="#ed5a65"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:src="@mipmap/bg_login" />
+</LinearLayout>
